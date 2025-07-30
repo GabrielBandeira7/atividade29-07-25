@@ -1,14 +1,20 @@
 const prompt = require("prompt-sync")();
 
-let numeroA = 3; Number(prompt("Digite um numero: "));
-let numeroB = 5; Number(prompt("Digite um numero:"));
+let numeroA = Number(prompt("Digite o primeiro número:"));
+let numeroB = Number(prompt("Digite o segundo número:"));
 
-console.log(numeroA + numeroB);
+console.log("Números digitados:", numeroA, "e", numeroB);
 
-console.log("A soma entre os numeros e: ", numeroA + numeroB);
+// Operações matemáticas
+console.log("Soma:", numeroA + numeroB);
+console.log("Subtração:", numeroA - numeroB);
+console.log("Multiplicação:", numeroA * numeroB);
 
-if(numeroB === 0){
-    console.log("impossivel dividir por zero!");
-}else{
-    console.log("A divisao entre os numeros é: ", divisao);
+// Verifica divisão por zero antes de calcular
+if (numeroB === 0) {
+  console.log("Divisão: Impossível dividir por zero!");
+  console.log("Resto da divisão: Impossível calcular!");
+} else {
+  console.log("Divisão:", numeroA / numeroB);
+  console.log("Resto da divisão:", numeroA % numeroB);
 }
