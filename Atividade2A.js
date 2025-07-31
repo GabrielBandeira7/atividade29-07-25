@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();    
+
 let nota1;
 let nota2;
 let nota3;
