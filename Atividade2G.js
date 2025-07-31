@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")();    
 
-let nome_usuario = prompt("Digite seu nome: ");
-let idade_usuario = Number(prompt("Digite sua idade: "));
+let nome_usuario = prompt("Insira o seu nome: ");
+let idade_usuario = Number(prompt("Insira sua idade: "));
 let gmail_usuario = prompt("Digite seu e-mail: ");
 
 if (gmail_usuario.includes("@gmail.com") && idade_usuario >= 18) {
